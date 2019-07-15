@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FD7A9FD-E07A-4662-9075-82E576C3A3DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAR_DIAGANOSE_APPLICATION</RootNamespace>
+    <AssemblyName>CAR_DIAGANOSE_APPLICATION</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>F:\app\Mostafa\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_profil.Designer.cs">
+      <DependentUpon>admin_profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="car_damage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="car_damage.Designer.cs">
+      <DependentUpon>car_damage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="car_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="car_history.Designer.cs">
+      <DependentUpon>car_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit engineer data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit engineer data.Designer.cs">
+      <DependentUpon>edit engineer data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit service data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit service data.Designer.cs">
+      <DependentUpon>edit service data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ENGINEER PROFILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENGINEER PROFILE.Designer.cs">
+      <DependentUpon>ENGINEER PROFILE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="engineer_diagnoise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="engineer_diagnoise.Designer.cs">
+      <DependentUpon>engineer_diagnoise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eng_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eng_reg.Designer.cs">
+      <DependentUpon>eng_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nearstservies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nearstservies.Designer.cs">
+      <DependentUpon>nearstservies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER ANDCAR INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER ANDCAR INFO.Designer.cs">
+      <DependentUpon>USER ANDCAR INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER PROFILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER PROFILE.Designer.cs">
+      <DependentUpon>USER PROFILE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_REGISTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_REGISTER.Designer.cs">
+      <DependentUpon>USER_REGISTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin_profil.resx">
+      <DependentUpon>admin_profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="car_damage.resx">
+      <DependentUpon>car_damage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="car_history.resx">
+      <DependentUpon>car_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit engineer data.resx">
+      <DependentUpon>edit engineer data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit service data.resx">
+      <DependentUpon>edit service data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENGINEER PROFILE.resx">
+      <DependentUpon>ENGINEER PROFILE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="engineer_diagnoise.resx">
+      <DependentUpon>engineer_diagnoise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eng_reg.resx">
+      <DependentUpon>eng_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nearstservies.resx">
+      <DependentUpon>nearstservies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER ANDCAR INFO.resx">
+      <DependentUpon>USER ANDCAR INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER PROFILE.resx">
+      <DependentUpon>USER PROFILE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_REGISTER.resx">
+      <DependentUpon>USER_REGISTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
